@@ -14,11 +14,11 @@ export function Model(props) {
   const { nodes, materials } = useGLTF('/jbl_t450.glb'); 
   const groupRef = useRef();
 
-  // Rotate model continuously
+  
   useFrame(() => {
     if (groupRef.current) {
       groupRef.current.rotation.z += 0.006; 
-      groupRef.current.rotation.x += 0.006; // Adjust speed here
+    
     }
   });
   return (

@@ -186,7 +186,8 @@ const LaptopModel = () => {
             fontFamily: 'Kanit, sans-serif',
             color: 'black',
           }}
-        >
+        >   
+        
           {text}
         </div>
       )}

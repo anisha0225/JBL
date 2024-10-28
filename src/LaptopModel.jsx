@@ -154,7 +154,7 @@ const LaptopModel = () => {
         style={{ backgroundColor: ' #262525', width: '100vw', height: '100vh' ,overflow:'hidden'}}
         shadows
         camera={{ position: [0, -15, 1], fov: 30 }}
-        zIndex={3}
+    
       >
         <ambientLight intensity={0.5} />
         <directionalLight position={[2, 2, 2]} intensity={5} />
@@ -162,7 +162,7 @@ const LaptopModel = () => {
         <directionalLight position={[-50, -80, 2]} intensity={4} />
 
             
-        <Model scale={modelScale} objectRef={meshRef} color={selectedImage ? colors[selectedImage] : colors.black} style={{zIndex:'3',position:'absolute'}}/>
+        <Model scale={modelScale} objectRef={meshRef} color={selectedImage ? colors[selectedImage] : colors.black} />
         <OrbitControls />
         <CameraAnimation
           setShowText={setShowText}
@@ -194,9 +194,9 @@ const LaptopModel = () => {
       {showAdditionalContent && (
       
 <>
-<div className="background-text">
+{/* <div className="background-text">
                     <h1>JBL HEADPHONE Built-in Microphone</h1>
-                </div>
+                </div> */}
         <div className="additional-content">
 
           <div className="content-left">

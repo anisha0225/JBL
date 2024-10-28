@@ -154,7 +154,7 @@ const LaptopModel = () => {
   return (
     <>
       <Canvas
-        style={{ backgroundColor: ' white', width: '100vw', height: '100vh' ,overflow:'hidden'}}
+        style={{ backgroundColor: ' white', width: '200vw', height: '200vh' ,overflow:'hidden'}}
         shadows
         camera={{ position: [0, -15, 1], fov: 30 }}
     

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap');
+.additional-content {
+    position: absolute;
+    top: 20vh;
+    left: 5vw;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    width: 90vw;
+    color: white;
+    font-family: 'Kanit, sans-serif';
+    justify-content: space-between;
+    align-items: center;
+    
+    
+  }
+  .content-left{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  transition: all transform 0.5s ease, box-shadow 0.5s ease;
+   
+  }
+  .content-left img:hover {
+    transform: scale(1.1);
+    border-radius: 50px;
+    box-shadow: 0px 5px 5px 5px rgba(252, 255, 255, 0.6);
+  }
+  
+  .content-left img.selected {
+    box-shadow: 0px 15px 25px rgba(255, 255, 255, 0.6);
+    border-radius: 50px; /* Extra shadow on selection */
+  }
+  
+  .content-left img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+  
+  }
+  
+  .content-right {
+    flex-direction: row;
+    padding: 0vw 10vw;
+    margin-top: -8vw;
+
+
+  }
+  
+  .content-right h2 {
+    font-size: 1.5vw;
+     font-style: italic; 
+    margin-bottom: -0.1rem;
+    color: white;
+    
+  }
+  @keyframes moveText {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .background-text {
+    position: absolute;
+    top: 20%; /* Adjust this value as needed */
+    white-space: nowrap;
+    font-size: 2rem; /* Adjust font size as needed */
+    color: white; /* Adjust color and transparency */
+    animation: moveText 10s linear infinite; /* Adjust duration for speed */
+    z-index: 0;
+    font-weight: 20;
+
+  }
+  
+  .content-right p {
+    font-size: 1.2rem;
+    margin-bottom: 0.1rem;
+  }
+ 
+
+  @media (max-width: 768px) {
+
+  
+    .content-left img {
+        margin-left: -15vw;
+        width:80px;
+    }
+  .content-right{
+    margin-top:-80vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 23vw;
+    text-align: center;
+
+  }
+    .content-right h2 {
+      font-size: 3vw;
+      
+    }
+  
+    .content-right p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Media query for mobile devices (576px and up) */
+  @media (max-width: 576px) {
+
+  
+    .content-left img {
+        margin-left: -13vw;
+        width:80px;
+    }
+  
+    .content-right h2 {
+      font-size: 3.1vw;
+      text-align: center;
+      margin-bottom: 1.1rem;
+    }
+    .content-right{
+        margin-top:-128vw;
+        margin-right:12vw;
+    
+        
+      }
+  
+    .content-right p {
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  }

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1vw 2vw;
+  background-color: #262525;
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  width: 96vw;
+  height:2vw;
+  z-index: 1;
+  position: fixed;
+}
+
+.navbar-logo {
+  font-size: 1.8vw;
+  font-weight: 700;
+  cursor:pointer;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  gap: 0.8vw;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  font-size: 1.3vw;
+}
+
+.navbar-links a:hover {
+  color: #dd9cf0;
+  transition: all 0.5s ease; /* Highlight color on hover */
+}
+@media (max-width: 576px){
+    .navbar-logo{
+        font-size: 4vw;
+        
+    }
+    .navbar{
+        margin-top: 2vw;
+    }
+    .navbar-links a{
+        font-size: 2.5vw;
+        padding:2.2px;
+    }
+}
+@media (max-width: 768px){
+    .navbar-logo{
+        font-size: 3.5vw;
+        
+    }
+    .navbar{
+        margin-top: 2vw;
+    }
+    .navbar-links a{
+        font-size: 2.2vw;
+        padding:2.2px;
+    }
+}

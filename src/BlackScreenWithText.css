@@ -1,0 +1,33 @@
+
+   .black-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+  }
+  
+  .glowing-text {
+    color: white;
+    font-size: 10vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: glowing 1s infinite alternate;
+  }
+  
+  @keyframes glowing {
+    0% {
+      text-shadow: 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 10px #7700ff7b, 0 0 15px #7700ff7b, 0 0 20px #7700ff7b, 0 0 25px #7700ff7b, 0 0 30px #7700ff7b;
+    }
+    100% {
+      text-shadow: 0 0 5px #ffffff, 0 0 15px #ffffff, 0 0 25px #7700ff7b, 0 0 35px #7700ff7b, 0 0 45px #7700ff7b, 0 0 55px #7700ff7b, 0 0 65px #7700ff7b;
+    }
+  }
+  

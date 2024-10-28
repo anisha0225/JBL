@@ -5,8 +5,8 @@
   justify-content: space-around;
   align-items: center;
   padding: 1vw 2vw;
-  background-color: #262525;
-  color: white;
+  background-color: rgba(255, 255, 255, 0.07);
+  color: black;
   font-family: 'Kanit', sans-serif;
   width: 96vw;
   height:2vw;
@@ -30,14 +30,14 @@
 
 .navbar-links a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: 500;
   transition: color 0.3s ease;
   font-size: 1.3vw;
 }
 
 .navbar-links a:hover {
-  color: #dd9cf0;
+  color: #6e377f;
   transition: all 0.5s ease; 
 }
 @media (max-width: 576px){

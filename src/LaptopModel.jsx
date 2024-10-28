@@ -151,7 +151,7 @@ const LaptopModel = () => {
   return (
     <>
       <Canvas
-        style={{ backgroundColor: ' #262525', width: '100vw', height: '100vh' ,overflow:'hidden'}}
+        style={{ backgroundColor: ' white', width: '100vw', height: '100vh' ,overflow:'hidden'}}
         shadows
         camera={{ position: [0, -15, 1], fov: 30 }}
     
@@ -184,7 +184,7 @@ const LaptopModel = () => {
             zIndex: 1,
             transition: 'opacity 0.5s ease-in-out',
             fontFamily: 'Kanit, sans-serif',
-            color: 'white',
+            color: 'black',
           }}
         >
           {text}
@@ -194,9 +194,6 @@ const LaptopModel = () => {
       {showAdditionalContent && (
       
 <>
-{/* <div className="background-text">
-                    <h1>JBL HEADPHONE Built-in Microphone</h1>
-                </div> */}
         <div className="additional-content">
 
           <div className="content-left">

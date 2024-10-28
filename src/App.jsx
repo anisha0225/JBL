@@ -16,11 +16,11 @@ const App = () => {
     <>
       {!showModel && <BlackScreenWithText onAnimationComplete={handleAnimationComplete} />}
       {showModel && 
-      <>
+      <div style={{ width: '100vw', height: '100vh' }}>
       <Navbar/>
       
       <LaptopModel/>
-      </>
+      </div>
     }
     </>
   );

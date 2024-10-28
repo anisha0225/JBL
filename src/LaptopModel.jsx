@@ -158,11 +158,16 @@ const LaptopModel = () => {
     setSelectedImage(image);
     setShowAdditionalContent(true); 
   };
+  const handleTouchMove = (event) => {
+    event.preventDefault();
+  };
 
   return (
-    <>
+    <div  style={{ backgroundColor: ' white', width: '100vw', height: '100vh',overflow:'hidden' }}>
+    
       <Canvas
-        style={{ backgroundColor: ' white', width: '100vw', height: '100vh' ,overflow:'hidden'}}
+        onTouchMove={handleTouchMove}
+       
         shadows
         camera={{ position: [0, -15, 1], fov: 30 }}
     
@@ -174,7 +179,7 @@ const LaptopModel = () => {
 
             
         <Model scale={modelScale} objectRef={meshRef} color={selectedImage ? colors[selectedImage] : colors.black} />
-        <OrbitControls />
+        <OrbitControls enablePan={false} enableZoom={false}/>
         <CameraAnimation
           setShowText={setShowText}
           setText={setText}
@@ -239,7 +244,7 @@ const LaptopModel = () => {
         </>
       
       )}
-    </>
+    </div>
   );
 };
 

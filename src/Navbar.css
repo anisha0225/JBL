@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1vw 2vw;
+  padding: 3vw 5vw;
   background-color: rgba(255, 255, 255, 0.07);
   color: black;
   font-family: 'Kanit', sans-serif;
@@ -15,7 +15,9 @@
 }
 
 .navbar-logo {
-  font-size: 1.8vw;
+  font-size: 3.8vw;
+  padding: 2px;
+
   font-weight: 700;
   cursor:pointer;
 }
@@ -23,7 +25,7 @@
 .navbar-links {
   list-style-type: none;
   display: flex;
-  gap: 0.8vw;
+  gap: 1.3vw;
   margin: 0;
   padding: 0;
 }
@@ -33,7 +35,7 @@
   color: black;
   font-weight: 500;
   transition: color 0.3s ease;
-  font-size: 1.3vw;
+  font-size: 1.5vw;
 }
 
 .navbar-links a:hover {
@@ -42,14 +44,14 @@
 }
 @media (max-width: 576px){
     .navbar-logo{
-        font-size: 4vw;
+        font-size: 5.3vw;
         
     }
     .navbar{
         margin-top: 2vw;
     }
     .navbar-links a{
-        font-size: 2.5vw;
+        font-size: 3vw;
         padding:2.2px;
     }
 }

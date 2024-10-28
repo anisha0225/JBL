@@ -38,7 +38,7 @@
 
 .navbar-links a:hover {
   color: #dd9cf0;
-  transition: all 0.5s ease; /* Highlight color on hover */
+  transition: all 0.5s ease; 
 }
 @media (max-width: 576px){
     .navbar-logo{

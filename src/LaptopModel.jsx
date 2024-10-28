@@ -4,7 +4,10 @@ import React, { useRef, useState } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import './LaptopModel.css'; 
-
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { motion } from 'framer-motion';
+gsap.registerPlugin(ScrollTrigger);
 const lerp = (start, end, t) => start + (end - start) * t;
 
 export function Model(props) {
@@ -140,7 +143,7 @@ const LaptopModel = () => {
     white: 'rgb(216, 221, 226)',
   };
 
-  const modelScale = window.innerWidth < 768 ? [10, 10, 10] : [25, 25, 25];
+  const modelScale = window.innerWidth < 768 ? [15, 15, 15] : [25, 25, 25];
 
   
   const handleImageSelect = (color, image) => {
@@ -187,7 +190,7 @@ const LaptopModel = () => {
             color: 'black',
           }}
         >   
-        
+
           {text}
         </div>
       )}

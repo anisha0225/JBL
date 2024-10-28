@@ -151,7 +151,7 @@ const LaptopModel = () => {
     white: 'rgb(216, 221, 226)',
   };
 
-  const modelScale = window.innerWidth < 768 ? [15, 15, 15] : [25, 25, 25];
+  const modelScale = window.innerWidth < 768 ? [10, 10, 10] : [25, 25, 25];
 
   
   const handleImageSelect = (color, image) => {
